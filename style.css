@@ -1,0 +1,26 @@
+html {
+    --color-body-background: rgb(255, 255, 255);
+    --color-body-text: rgb(0 0 0 / .8);
+    --color-headings: rgb(0 0 0 / 1);
+    --color-links: rgb(51 102 204 / 1);
+    --color-links-dark: rgb(0 51 153 / 1);
+}
+
+body {
+    background: var(--color-body-background);
+    color: var(--color-body-text);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings);
+}
+
+a {
+    color: var(--color-links);
+}
+
+a:hover {
+    color: var(--color-links-dark)
+}
