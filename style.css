@@ -130,7 +130,7 @@ img {
         gap: var(--gridgap);
     }
 
-    .row.verticalcentered {
+    .row.vertical-centered {
         align-items: center;
     }
 
@@ -185,6 +185,10 @@ img {
 
 
 /* FOR DEMO GRID ONLY */
+
+.demo .row {
+    margin-bottom: 0;
+}
 
 .demo .row>* {
     background: rgb(0 0 0 / .1);
