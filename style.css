@@ -5,6 +5,7 @@
     # GLOBAL RESETS
     # GLOBAL COLOURS
     # GLOBAL TYPOGRAPHY
+    # GLOBAL MEDIA (eg images video)
 
 # LAYOUT
     # MEDIA QUERIES (W/RESPONSIVE TYPOGRAPHY)
@@ -102,17 +103,23 @@ body {
     }
 }
 
-
+/* RESPONSIVE IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* CONTAINER */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
+    margin-bottom: 4em;
 }
 
 @media (min-width: 768px) {
@@ -122,6 +129,19 @@ body {
         grid-template-columns: repeat(12, 1fr);
         gap: var(--gridgap);
     }
+
+    .row.verticalcentered {
+        align-items: center;
+    }
+
+    .row.swapped .one-half:nth-child(1) {
+        order: 2;
+    }
+
+    .row.swapped .one-half:nth-child(2) {
+        order: 1;
+    }
+
 
     .one-whole {
         grid-column: span 12 / span 12;
