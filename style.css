@@ -70,6 +70,7 @@ h3 {
     color: var(--color-headings);
 }
 
+
 a {
     color: var(--color-links);
 }
@@ -88,6 +89,22 @@ h1,
 h2,
 h3 {
     font-family: var(--font-headings);
+}
+
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.875em;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.1;
 }
 
 p {
@@ -128,7 +145,8 @@ img {
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
-    margin-bottom: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +215,7 @@ img {
 
 .demo .row {
     margin-bottom: 0;
+    padding: 0;
 }
 
 .demo .row>* {
@@ -261,7 +280,18 @@ img {
 /* SITE MAIN */
 
 .site-main {
-    background-color: aqua;
+    /* background-color: red; */
+}
+
+section {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-color: pink;
 }
 
 /* SITE FOOTER */
