@@ -38,8 +38,15 @@
     --color-headings: rgb(0 0 0 / 1);
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(0 51 153 / 1);
-    --color-accent-color: rgb(255, 166, 0);
-    --color-header-footer-bg: rgb(0 0 0 / .2);
+    --color-accent-color: rgb(105, 0, 102);
+    --color-header-bg: rgb(105, 0, 102);
+    --color-header-links: rgb(255, 255, 255);
+    --color-hero-bg: rgb(234, 149, 231);
+    --color-footer-bg: rgb(0 0 0 / 1);
+    --color-footer-text: rgb(255, 255, 255);
+    --color-footer-links: rgb(140, 108, 192);
+    --color-footer-hover-links: rgb(190, 108, 192);
+
 
     /* BASE TYPOGRAPHY */
     --font-body: Helvetica, Arial, sans-serif;
@@ -244,8 +251,14 @@ img {
     align-items: center;
 }
 
+.site-header a {
+    color: var(--color-header-links);
+    text-decoration: none;
+}
+
 .site-header .site-logo {
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
@@ -291,14 +304,21 @@ section {
 /* HERO SECTION */
 
 .hero {
-    background-color: pink;
+    background: var(--color-hero-bg);
 }
 
 /* SITE FOOTER */
 
 .site-footer {
-    background-color: var(--color-header-bg);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
     padding: 3em;
+}
+
+.site-footer h1,
+.site-footer h2,
+.site-footer h3 {
+    color: var(--color-footer-text);
 }
 
 .site-footer .site-nav ul {
@@ -306,6 +326,16 @@ section {
     margin: 0;
     padding: 0;
 
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: var(--color-footer-links);
+
+}
+
+.site-footer a:hover {
+    color: var(--color-footer-hover-links);
 }
 
 
